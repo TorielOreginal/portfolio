@@ -13,7 +13,8 @@ main{
 /* Screen 1 */
 
 .screen1{
-    height: 100vh;
+    width: auto;
+    height: auto;
     background: linear-gradient(to right, #acb6e5, #86fde8);
     color: #fff;
 }
@@ -29,6 +30,7 @@ main{
 /* Screen 2 */
 
 .screen2{
+    width: auto;
     height: auto;
     background-color: #fff;
     color: #000;
@@ -64,10 +66,15 @@ main{
 /* Screen 3 */
 
 .screen3{
-    height: 72vh;
+    width: auto;
+    height: 75vh;
     padding: 100px;
     background: linear-gradient(to right, #a73737, #7a2828);
     color: #fff;
+}
+
+.social-media img{
+    width: 5%;
 }
 
 /* Footer */
@@ -81,4 +88,43 @@ footer{
 
 .social-media{
     flex-direction: row;
+}
+
+@media(max-width: 900px){
+    .cards{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media(max-width: 700px){
+    .cards{
+        grid-template-columns: auto;
+    }
+
+    .social-media img{
+        width: 15%;
+    }
+}
+
+@media(max-width: 400px){
+    .center h3{
+        font-size: 13px;
+    }
+
+    .cards-container h1{
+        font-size: 15px;
+    }
+
+    .card{
+        width: 150px;
+        height: 200px;
+    }
+
+    .screen3 h1{
+        font-size: 26px;
+    }
+
+    .screen3 h2{
+        font-size: 20px;
+    }
 }
